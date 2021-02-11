@@ -63,7 +63,7 @@ class ErrHome(BotPlugin):
         # Get cookies (interested in SESSION) 
         session = r.cookies 
         result = requests.get(host + 'networkmap.html',  cookies=session) 
-        soup = BeautifulSoup(result.content, features="lxml") 
+        soup = BeautifulSoup(result.content, features="html.parser") 
         imgs = soup.find_all('img') 
         listIPs = {} 
         # We are using a dict because there were some duplicates
