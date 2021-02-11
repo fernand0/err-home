@@ -1,0 +1,13 @@
+[Core]
+name = errHome
+module = errHome
+
+[Documentation]
+description = Controlling some home devices
+
+[Python]
+version = 3
+
+[Errbot]
+min = 6.1.7
+
